@@ -6,7 +6,7 @@
 
 	<settings cacheModelsEnabled="true" enhancementEnabled="true"
 		lazyLoadingEnabled="true" maxRequests="30" maxSessions="25"
-		maxTransactions="20" useStatementNamespaces="false" />
+		maxTransactions="20" useStatementNamespaces="true" />
 	<transactionManager type="JDBC">
 		<dataSource type="SIMPLE">
 			<property name="JDBC.Driver" value="${driver}"/>
@@ -18,4 +18,5 @@
 	<!-- sql문들이 저장되어 있는 xml을 등록-->
 	
 	<sqlMap resource="./iba/test.xml"/>
+	<sqlMap resource="./iba/emp.xml"/>
 </sqlMapConfig>

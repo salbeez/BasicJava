@@ -9,13 +9,25 @@
 		insert into empcopy (empno,ename,sal,deptno)
 		values(8004,#value#,3000,10)<!-- 단일값 일때 -->
 	</insert>
-	
-	<insert id="empAdd3" parameterClass="com.kosta.j0516.Emp"><!-- 자바빈즈 일때는 변수명 똑같이  -->
+
+	<insert id="empAdd3" parameterClass="com.kosta.j0516.Emp"><!-- 자바빈즈 일때는 변수명 똑같이 -->
 		insert into empcopy (empno,ename,sal,deptno)
 		values(#empno#,#ename#,#sal#,#deptno#)
 	</insert>
-	
+
 	<delete id="deleteEmp">delete from empcopy where empno=8010</delete>
-	
-	<delete id="deleteEmp2" parameterClass="String">delete from empcopy where ename=#ename#</delete>
+
+	<delete id="deleteEmp2" parameterClass="String">delete from empcopy where
+		ename=#ename#
+	</delete>
+
+	<select id="selectEname" resultClass="String">
+		<!--결과값을 받기 위해 resultClass 또는 resultMap을반드시 써야 한다 -->
+		select ename from empcopy where empno=7788
+	</select>
+
+	<select id="selectEname2" resultClass="String" parameterClass="int">
+		<!--결과값을 받기 위해 resultClass 또는 resultMap을반드시 써야 한다 -->
+		select ename from empcopy where empno=#empnoValue#
+	</select>
 </sqlMap>

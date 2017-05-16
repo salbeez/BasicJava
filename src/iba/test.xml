@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd" >
+<sqlMap>
+	<!-- 스키마를 쓰면 안된다 , ";"쓰면 안된다 -->
+	<insert id="empAdd">insert into empcopy (empno,ename,sal,deptno)
+		values(8000,'길동',3000,20)
+	</insert>
+	<insert id="empAdd2" parameterClass="java.lang.String">
+		insert into empcopy (empno,ename,sal,deptno)
+		values(8004,#value#,3000,10)<!-- 단일값 일때 -->
+	</insert>
+	
+	<insert id="empAdd3" parameterClass="com.kosta.j0516.Emp"><!-- 자바빈즈 일때는 변수명 똑같이  -->
+		insert into empcopy (empno,ename,sal,deptno)
+		values(#empno#,#ename#,#sal#,#deptno#)
+	</insert>
+	
+	<delete id="deleteEmp">delete from empcopy where empno=8010</delete>
+	
+	<delete id="deleteEmp2" parameterClass="String">delete from empcopy where ename=#ename#</delete>
+</sqlMap>

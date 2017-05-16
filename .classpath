@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/ji/Desktop/JDBC/postgresql-42.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kosta/Desktop/iBatis/ibatis-2.3.4.726/lib/ibatis-2.3.4.726.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kosta/Desktop/ojdbc6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

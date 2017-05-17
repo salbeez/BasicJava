@@ -6,6 +6,10 @@ import java.util.List;
 import com.ibatis.sqlmap.client.SqlMapClient;
 import com.kosta.j0516.Emp;
 
+/**
+ * @author kosta
+ * @SQLMAPER
+ */
 public class IBatisTest {
 	public static void main(String[] args) {
 		// empcopy테이블 : 사원 추가

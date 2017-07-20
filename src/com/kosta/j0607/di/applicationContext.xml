@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <!-- 빈(클래스) 관리 -->
+   
+   
+   <bean id="foi" class="com.kosta.j0607.di.FileOutputImpl"></bean>
+   
+   <bean class="com.kosta.j0607.di.MessageBeanImpl" id="msgBean">
+   
+      <!-- 생성자 주입 (Constructor Injection) -->
+       <constructor-arg>
+          <!-- <value type="java.lang.String">안녕</value> -->
+          <value>안녕</value>
+       </constructor-arg> 
+       <constructor-arg>
+           <!-- <bean class="com.kosta.j0607.di.FileOutputImpl"></bean> -->
+           <ref bean="foi"/>
+       </constructor-arg>    
+       
+      <!-- 세터 주입 (Setter Injection) -->
+       <property name="name" value="김주원">
+          <!-- <value>김주원</value> -->
+       </property>       
+       
+   </bean>        
+           
+</beans>

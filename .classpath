@@ -4,5 +4,12 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/kosta/Desktop/iBatis/ibatis-2.3.4.726/lib/ibatis-2.3.4.726.jar"/>
 	<classpathentry kind="lib" path="C:/Users/kosta/Desktop/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kosta/Desktop/SpringFramework/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kosta/Desktop/SpringFramework/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kosta/Desktop/SpringFramework/lib/spring-aop-4.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kosta/Desktop/SpringFramework/lib/spring-beans-4.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kosta/Desktop/SpringFramework/lib/spring-context-4.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kosta/Desktop/SpringFramework/lib/spring-core-4.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kosta/Desktop/SpringFramework/lib/spring-expression-4.2.3.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
